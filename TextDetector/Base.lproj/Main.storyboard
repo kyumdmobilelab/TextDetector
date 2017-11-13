@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TextDetector" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="KeL-9q-fDK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMK-al-NMk">
+                                <rect key="frame" x="0.0" y="615" width="375" height="44"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="klD-bR-Kqg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Confirm"/>
+                                <connections>
+                                    <action selector="clickOKButtonWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Egs-yr-GT7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KeL-9q-fDK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="XR6-ev-133"/>
+                            <constraint firstAttribute="trailing" secondItem="KeL-9q-fDK" secondAttribute="trailing" id="bi9-Hc-RWV"/>
+                            <constraint firstItem="KeL-9q-fDK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="iP2-UA-Xkc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KeL-9q-fDK" secondAttribute="bottom" id="ir2-aN-V5A"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aMK-al-NMk" secondAttribute="bottom" constant="8" id="nyu-U7-Dlw"/>
+                            <constraint firstItem="aMK-al-NMk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ykD-Ji-lQv"/>
+                            <constraint firstAttribute="trailing" secondItem="aMK-al-NMk" secondAttribute="trailing" id="zak-ZF-UO7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myView" destination="KeL-9q-fDK" id="TyX-vR-Fob"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+</document>
