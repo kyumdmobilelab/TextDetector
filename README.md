@@ -5,5 +5,13 @@
 
 
 ## 截圖：
+偵測文字：
 
-![image](images/IMG.PNG)
+![image1](images/IMG01.PNG)
+
+<br/>
+
+解析文字：
+
+![image2](images/IMG02.PNG)
+
